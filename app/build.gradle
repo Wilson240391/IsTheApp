@@ -26,6 +26,12 @@ android {
             it.buildConfigField("String", "PACKAGE_CHECK_SOCIAL", PACKAGE_CHECK_SOCIAL)
         }
     }
+    android {
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+    }
     lintOptions {
         checkReleaseBuilds false
         abortOnError false
@@ -103,8 +109,8 @@ dependencies {
     implementation 'com.jakewharton:kotterknife:0.1.0-SNAPSHOT'
 
     //dagger2
-    implementation 'com.google.dagger:dagger:2.16'
-    kapt 'com.google.dagger:dagger-compiler:2.14.1'
+    implementation 'com.google.dagger:dagger:2.44.2'
+    kapt 'com.google.dagger:dagger-compiler:2.44.2'
     compileOnly 'org.glassfish:javax.annotation:10.0-b28'
 
     //RxPermissions

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.jakewharton:kotterknife:0.1.0-SNAPSHOT@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/00530535a97f28c5e0ad212ca57a17f3/transformed/jetified-kotterknife-0.1.0-SNAPSHOT/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00530535a97f28c5e0ad212ca57a17f3/transformed/jetified-kotterknife-0.1.0-SNAPSHOT/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/00530535a97f28c5e0ad212ca57a17f3/transformed/jetified-kotterknife-0.1.0-SNAPSHOT/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

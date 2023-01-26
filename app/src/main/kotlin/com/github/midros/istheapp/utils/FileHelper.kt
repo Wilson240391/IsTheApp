@@ -151,12 +151,20 @@ object FileHelper{
     }
 
     fun getDurationFile(fileName:String) : String{
-        val metaRetriever = MediaMetadataRetriever()
-        metaRetriever.setDataSource(fileName)
-        val duration = metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION).toLong()
-        val seconds = (duration % 60000 / 1000).toString()
-        val minutes = (duration / 60000).toString()
-        metaRetriever.release()
+        var seconds = ""
+        var minutes = ""
+        try {
+            val metaRetriever = MediaMetadataRetriever()
+            metaRetriever.setDataSource(fileName)
+            val duration =
+                metaRetriever.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION).toLong()
+            seconds = (duration % 60000 / 1000).toString()
+            minutes = (duration / 60000).toString()
+            metaRetriever.release()
+
+        }catch (e:Exception){
+            e(TAG, e.message.toString())
+        }
         return if (seconds.length == 1) "$minutes:0$seconds" else "$minutes:$seconds"
     }
 

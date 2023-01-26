@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.github.midros.istheapp-mergeDebugResources-32:/values-land/values-land.xml",
+            "map": [
+                {
+                    "source": "/Users/wilson/.gradle/caches/transforms-3/b8274e6bd845d2507aa8a8a8df52226d/transformed/material-1.0.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
+                    "source": "/Users/wilson/.gradle/caches/transforms-3/ca3f56ea712764d96200fa5063d21a51/transformed/appcompat-1.1.0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,125,196",
+                        "endColumns": "69,70,67",
+                        "endOffsets": "120,191,259"
+                    }
+                }
+            ]
+        }
+    ]
+}
